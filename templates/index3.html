@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>my_summary</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../static/index3.css">
+    <link rel="script" href="index.js">
+</head>
+<body>
+<div class="summary bg_plain">
+    <div class="move accent_color">
+        <pre class="big_font">{{ info_w[0][1] }} {{ info_w[0][0] }}</pre>
+        <pre class="job_title medium_font"> {{ info_w[0][2] }}</pre>
+        <p class="city medium_font"><i class="bi bi-geo-alt-fill"></i>{{ info_w[0][3] }}</p>
+        <p class="phone medium_font "><i class="bi bi-telephone-fill"></i> {{ info_w[0][4] }}</p>
+        <p class="mail medium_font"><i class="bi bi-envelope-fill"> </i>{{ info_w[0][5] }}</p>
+
+        <div class="skill header_primary">
+            <p><i class="bi bi-journal-bookmark-fill"> </i> Hard skills</p>
+        </div>
+
+        <ul>
+            <div class="move2 primary_color text_primary">
+                <li>Knowledge of programming language
+                    <span class="word1" onmouseover="changeContainerVisibility(event)"> <u>{{ data[0][1] }}</u>,</span>
+                    <div class="container" id="move2">
+                        <div class="popup">
+                            <p>OOP</p>
+                            <p>Flask</p>
+                            <p>TelgamBot</p>
+                            <p>RESTapi</p>
+                            <p>SQLlite</p>
+                            <p>MySQL</p>
+                        </div>
+                    </div>
+                    <span class="word1" onmouseover="changeContainerVisibility(event)"> <u>{{ data[1][1] }}</u>,</span>
+                    <div class="container" id="move2">
+                        <div class="popup">
+                            <p>OOP</p>
+                            <p>CLI</p>
+                        </div>
+                    </div>
+                    <span class="word1" onmouseover="changeContainerVisibility(event)"> <u>{{ data[2][1] }}</u></span>
+                    <div class="container" id="move2">
+                        <div class="popup">
+                            <p>Basic knowledge</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>Knowledge
+                    of {{ data[3][1] }}, {{ data[4][1] }}, {{ data[5][1] }}, {{ data[6][1] }}, {{ data[7][1] }}</li>
+                <li>Worked in {{ data[8][1] }}, {{ data[9][1] }},{{ data[10][1] }}, {{ data[11][1] }}</li>
+            </div>
+        </ul>
+    </div>
+    <div class="green_strip bg_accent">
+
+    </div>
+    <div class="image_Puzzle accent_color header_primary">
+        <p><i class="bi bi-puzzle-fill"></i> Soft skills</p>
+    </div>
+    <div class="skills text_primary primary_color ">
+        {% for x in skills[:4] %}
+            <li>{{ x[0] }} <b class="accent_color"> {{ level(x[1]) }} </b></li>
+        {% endfor %}
+    </div>
+    <div class="book header_primary accent_color">
+        <p><i class="bi bi-book-half"></i> Education</p>
+    </div>
+    <div class="indent accent_color" >
+        <p class="primary_color"> Bachelor, third year </p>
+        <a href="https://kneu.edu.ua/"  class="my_link_KNEU"> KNEU, </a>
+        <a href="https://kneu.edu.ua/ua/depts9/k_informacijnyh_system_v_ekonomici/inf_vs_ek/dfvsdsdf/"
+            class="my_link_KNEU"> Master's programs in the specialty 122 "Computer
+            Science" </a>
+    </div>
+    <div class = "set_button">
+        <a href="../static/Резюме%202.pdf" download>
+            <button class="small_font">Download</button>
+        </a>
+    </div>
+
+    <div class="social">
+        <a href="https://www.linkedin.com/in/nikolas-siroshtanov-18599627b/" class="no-decor">
+            <i class="bi bi-linkedin header_primary accent_color"></i>
+        </a>
+        <a href="https://github.com/Nikolas7070" class="no-decor">
+            <i class="bi bi-github header_primary accent_color"></i>
+        </a>
+        <a href="https://www.instagram.com/amaterasu_60hz/" class="no-decor">
+            <i class="bi bi-instagram header_primary accent_color"></i>
+        </a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+body {
+    background: url("../static/imgs/Frame\ 1.png")
+}
+
+.big_font {
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.medium_font {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.small_font {
+    font-size: 10px;
+    font-family: 'Quicksand', sans-serif;
+}
+.header_primary{
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+}
+.text_primary{
+    font-size: 17px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.accent_color {
+    color: rgb(4, 108, 92);
+}
+
+.primary_color {
+    color: rgb(30, 35, 44);
+}
+
+.bg_accent{
+    background: rgb(4, 108, 92);
+}
+.bg_plain{
+    background: rgb(255, 255, 255);
+}
+.no-decor{
+    text-decoration: none;
+}
+
+
+.summary {
+    position: absolute;
+    left: 50%;
+    width: 800px;
+    height: 1000px;
+    margin-left: -400px;
+    border-width: 1px;
+    box-shadow: 5px 5px 30px 3px rgb(112, 112, 112);
+}
+
+.green_strip {
+    z-index: 0;
+    width: 200px;
+    height: 998px;
+    margin-top: -422px;
+    margin-left: 1px;
+    position: absolute;
+}
+
+.social {
+    margin-top: -910px;
+    margin-left: 625px;
+    text-decoration: none;
+}
+
+.job_title {
+    position: relative;
+    margin-top: -35px;
+}
+
+.city {
+    position: relative;
+    margin-left: 25px;
+}
+
+.phone {
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 25px;
+}
+
+.mail {
+
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 25px;
+    margin-top: 13px;
+}
+
+.move {
+    margin-left: 250px;
+    margin-top: 50px;
+}
+
+.move2 {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: -20px;
+    line-height: 30px;
+}
+
+.image_GPS {
+    margin-top: -270px;
+    margin-left: 249px;
+}
+
+.image_Phone {
+    margin-top: 12px;
+    margin-left: 251px;
+}
+
+.image_Mail {
+    margin-top: 19.3px;
+    margin-left: 251px;
+}
+
+.image_Puzzle {
+    font-family: 'Quicksand', sans-serif;
+
+    margin-top: 20px;
+    margin-left: 251px;
+    font-size: 26px;
+}
+
+.image_Motherboard {
+    margin-top: -50px;
+    margin-left: -251px;
+}
+
+.skill {
+    margin-top: 25px;
+    margin-left: 0px;
+    color: rgb(4, 108, 92);
+}
+
+.skills {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-left: 258px;
+}
+
+.book {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 25px;
+    margin-left: 251px;
+    font-size: 26px;
+    color: rgb(4, 108, 92);
+}
+
+.my_link_KNEU {
+    font-family: 'Quicksand', sans-serif;
+    color: rgb(4, 108, 92);
+    font-size: 10px;
+    line-height: 10px;
+}
+
+.indent {
+    font-family: 'Quicksand', sans-serif;
+    margin-left: 258px;
+    line-height: 10px;
+    font-size: 17px;
+}
+
+button {
+    z-index: 1;
+    font-family: 'Quicksand', sans-serif;
+
+    margin-left: 650px;
+    width: 100px;
+    height: 40px;
+    color: rgb(4, 108, 92);
+    padding: 5px 15px;
+    cursor: pointer;
+    text-align: top;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(4, 108, 92);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 3px rgb(112, 112, 112);
+}
+
+.set_button {
+    margin-top: 200px;
+    margin-left: -200px;
+}
+
+
+.container {
+    visibility: hidden;
+    margin-left: 800px;
+    margin-top: -780px;
+}
+
+.word1 {
+    left: 50%;
+    width: 20px;
+    height: 10px;
+    background: white;
+    margin-left: 2px;
+    user-select: none;
+}
+
+.container {
+
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fffbfb;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    border-radius: 10px;
+
+}
+
+.word1:hover + .container {
+    visibility: visible;
+}
+
+.popup {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  0 {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
